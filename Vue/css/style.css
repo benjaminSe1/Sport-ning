@@ -1,0 +1,280 @@
+
+/*
+polices importées
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+
+
+/*
+--------------------------------------------------Ecran classique-----------------------------------------
+*/
+/*
+----------------------Nav Bar Encadrant-----------------------
+*/
+ul.topnav {
+  font-family: Raleway, sans-serif;
+  list-style-type: none;
+  margin: auto;
+  padding: auto;
+  overflow: hidden;
+  background: none;
+  border-bottom: 3px solid #6495ED;
+  line-height: 1;
+}
+
+ul.topnav li {
+  text-align: center;
+  float: left;
+}
+
+ul.topnav li a {
+  display: inline-block;
+  color: #444444;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+ul.topnav li a:hover:not(#home):not(#deco) {
+  background-color: #6495ED;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  content: "";
+  -webkit-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+  -webkit-transform: perspective(15px) rotateX(2deg);
+  -webkit-transform-origin: bottom;
+  -moz-transform: perspective(15px) rotateX(2deg);
+  -moz-transform-origin: bottom;
+  transform: perspective(15px) rotateX(2deg);
+  transform-origin: bottom;
+  }
+
+ #deco:hover {
+  background-color: #EA4B35;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  content: "";
+  -webkit-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+  -webkit-transform: perspective(15px) rotateX(2deg);
+  -webkit-transform-origin: bottom;
+  -moz-transform: perspective(15px) rotateX(2deg);
+  -moz-transform-origin: bottom;
+  transform: perspective(15px) rotateX(2deg);
+  transform-origin: bottom;
+  }
+
+ul.topnav li.icon {
+  display: none;
+}
+
+/*
+-------------------FIN Nav Bar Encadrant-------------------------
+*/
+
+/*
+-------------------Nav Bar Admin-------------------------
+*/
+ul.topnavAdmin {
+  font-family: Raleway, sans-serif;
+  list-style-type: none;
+  margin: auto;
+  padding: auto;
+  overflow: hidden;
+  background: #ffffff;
+  border-bottom: 3px solid #6495ED;
+  line-height: 1;
+}
+
+ul.topnavAdmin li {
+  text-align: center;
+  float: left;
+}
+
+ul.topnavAdmin li a {
+  display: inline-block;
+  color: #444444;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+ul.topnavAdmin li a:hover:not(#homeAdmin):not(#decoAdmin) {
+  background-color: #6495ED;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  content: "";
+  -webkit-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+  -webkit-transform: perspective(15px) rotateX(2deg);
+  -webkit-transform-origin: bottom;
+  -moz-transform: perspective(15px) rotateX(2deg);
+  -moz-transform-origin: bottom;
+  transform: perspective(15px) rotateX(2deg);
+  transform-origin: bottom;
+  }
+
+ #decoAdmin:hover {
+  background-color: #EA4B35;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  content: "";
+  -webkit-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+  -webkit-transform: perspective(15px) rotateX(2deg);
+  -webkit-transform-origin: bottom;
+  -moz-transform: perspective(15px) rotateX(2deg);
+  -moz-transform-origin: bottom;
+  transform: perspective(15px) rotateX(2deg);
+  transform-origin: bottom;
+  }
+
+ul.topnavAdmin li.iconAdmin {
+  display: none;
+}
+/*
+-------------------FIN Nav Bar Admin-------------------------
+*/
+
+/*
+--------------------------------------------------FIN Ecran classique-----------------------------------------
+*/
+
+
+/*
+--------------------------------------------------Ecran largeur inférieur à 800 px-----------------------------------------
+*/
+@media screen and (max-width:800px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+
+  ul.topnav li a:hover:not(#home):not(#deco) {
+  background-color: #6495ED;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  content: "";
+  -webkit-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+  -webkit-transform: perspective(401px) rotateX(2deg);
+  -webkit-transform-origin: bottom;
+  -moz-transform: perspective(40px) rotateX(2deg);
+  -moz-transform-origin: bottom;
+  transform: perspective(40px) rotateX(2deg);
+  transform-origin: bottom;
+  }
+
+ #deco:hover {
+  background-color: #EA4B35;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  content: "";
+  -webkit-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+ -webkit-transform: perspective(401px) rotateX(2deg);
+  -webkit-transform-origin: bottom;
+  -moz-transform: perspective(40px) rotateX(2deg);
+  -moz-transform-origin: bottom;
+  transform: perspective(40px) rotateX(2deg);
+  transform-origin: bottom;
+  }
+}
+
+
+/*
+--------------------------------------------------FIN Ecran largeur inférieur à 800 px-----------------------------------------
+*/
+
+
+
+/*
+--------------------------------------------------Ecran largeur inférieur à 1000 px-----------------------------------------
+*/
+@media screen and (max-width:1000px) {
+  ul.topnavAdmin li:not(:first-child) {display: none;}
+  ul.topnavAdmin li.iconAdmin {
+    float: right;
+    display: inline-block;
+  }
+
+  ul.topnavAdmin.responsive {position: relative;}
+  ul.topnavAdmin.responsive li.iconAdmin {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnavAdmin.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnavAdmin.responsive li a {
+    display: block;
+    text-align: left;
+  }
+
+  ul.topnavAdmin li a:hover:not(#homeAdmin):not(#decoAdmin) {
+  background-color: #6495ED;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  content: "";
+  -webkit-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+  -webkit-transform: perspective(401px) rotateX(2deg);
+  -webkit-transform-origin: bottom;
+  -moz-transform: perspective(40px) rotateX(2deg);
+  -moz-transform-origin: bottom;
+  transform: perspective(40px) rotateX(2deg);
+  transform-origin: bottom;
+  }
+
+ #decoAdmin:hover {
+  background-color: #EA4B35;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  content: "";
+  -webkit-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+ -webkit-transform: perspective(401px) rotateX(2deg);
+  -webkit-transform-origin: bottom;
+  -moz-transform: perspective(40px) rotateX(2deg);
+  -moz-transform-origin: bottom;
+  transform: perspective(40px) rotateX(2deg);
+  transform-origin: bottom;
+  }
+}
+
+
+/*
+--------------------------------------------------FIN Ecran largeur inférieur à 1000 px-----------------------------------------
+*/
